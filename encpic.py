@@ -200,9 +200,9 @@ def test(img):
     
 def print_credits():
 	table = Table(show_header=True)
-	table.add_column("Student",style="yellow")
-	table.add_column("Roll No",style="yellow")
-	table.add_row("Chintha Sai Raj", "17BK1A0571")
+	table.add_column("Team",style="yellow")
+	table.add_column("Class",style="yellow")
+	table.add_row("Team 1", "4 CSE-B")
 	console.print(table)
 
 
@@ -298,10 +298,10 @@ def main():
 
 if __name__ == "__main__":
 	os.system('cls' if os.name == 'nt' else 'clear')
-	cprint(figlet_format('IMGHIDE!', font='starwars'),'yellow', attrs=['bold'])
+	cprint(figlet_format('ENCPic!', font='starwars'),'yellow', attrs=['bold'])
 	print_credits()
 	print()
-	print("[bold]IMGHIDE[/bold] allows you to hide texts inside an image. You can also protect these texts with a password using AES-256.")
+	print("[bold]ENCPic[/bold] allows you to hide texts inside an image. You can also protect these texts with a password using AES-256.")
 	print()
 	
 	main()
